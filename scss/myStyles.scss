@@ -1,11 +1,13 @@
 @import "compass/reset";
 
+// variables
+$headerFont:'Open Sans', sans-serif;
+$paragraphFont:'Merriweather', serif;
+
 // contentContainer class used to contain
 // the content of the page, so it doesn't
 // fill 100%
 .contentContainer{
 
 }
-
-
 // =====INDEX.HTML=====
