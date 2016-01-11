@@ -62,3 +62,60 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 10, ../scss/myStyles.scss */
+.contentContainer {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+/* line 16, ../scss/myStyles.scss */
+#mainHeader {
+  width: 100%;
+  background-color: RGB(151, 33, 38);
+  display: flex;
+}
+/* line 22, ../scss/myStyles.scss */
+#mainHeader a img {
+  width: 300px;
+  height: auto;
+}
+/* line 29, ../scss/myStyles.scss */
+#mainHeader nav ul {
+  display: flex;
+}
+/* line 32, ../scss/myStyles.scss */
+#mainHeader nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 41, ../scss/myStyles.scss */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 46, ../scss/myStyles.scss */
+main #welcomeHeader {
+  background-color: lightgray;
+  height: 100px;
+  min-width: 100%;
+}
+/* line 50, ../scss/myStyles.scss */
+main #welcomeHeader h1 {
+  text-align: center;
+  font-size: 40px;
+}
+/* line 55, ../scss/myStyles.scss */
+main #leftArticle {
+  background-color: green;
+  min-width: 50%;
+  flex: 1;
+}
+/* line 60, ../scss/myStyles.scss */
+main #rightArticle {
+  background-color: purple;
+  min-width: 50%;
+  flex: 1;
+}

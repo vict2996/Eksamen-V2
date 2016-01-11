@@ -8,6 +8,59 @@ $paragraphFont:'Merriweather', serif;
 // the content of the page, so it doesn't
 // fill 100%
 .contentContainer{
-
+	padding-left:15%;
+	padding-right:15%;
 }
 // =====INDEX.HTML=====
+// ===header===
+#mainHeader{
+	width:100%;
+	background-color:RGB(151,33,38);
+	display:flex;
+	a{
+
+		img{
+			width:300px;
+			height:auto;
+		}
+	}
+	nav{
+
+		ul{
+			display:flex;
+			li{
+				a{
+					color:white;
+					text-decoration:none;
+					font-family:$headerFont;
+				}
+			}
+		}
+	}
+}
+main{
+	display:flex;
+	flex-wrap:wrap;
+
+	// welcoming Header
+	#welcomeHeader{
+		background-color:lightgray;
+		height:100px;
+		min-width:100%;
+		h1{
+			text-align:center;
+			font-size:40px;
+		}
+	}
+	#leftArticle{
+		background-color:green;
+		min-width:50%;
+		flex:1;
+	}
+	#rightArticle{
+		background-color:purple;
+		min-width:50%;
+		flex:1;
+	}
+
+}
