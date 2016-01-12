@@ -61,6 +61,17 @@ main{
 		background-color:purple;
 		min-width:50%;
 		flex:1;
+		.fadein{
+			position:relative;
+			width:430px;
+			height:300px;
+
+			img{
+				position:absolute;
+				left:0;
+				top:0;
+			}
+		}
 	}
 
 }

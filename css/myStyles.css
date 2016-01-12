@@ -119,3 +119,15 @@ main #rightArticle {
   min-width: 50%;
   flex: 1;
 }
+/* line 64, ../scss/myStyles.scss */
+main #rightArticle .fadein {
+  position: relative;
+  width: 430px;
+  height: 300px;
+}
+/* line 69, ../scss/myStyles.scss */
+main #rightArticle .fadein img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
