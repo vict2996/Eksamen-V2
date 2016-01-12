@@ -1,0 +1,13 @@
+/* line 4, ../scss/responsiveStyles.scss */
+#mainHeader nav ul li {
+  min-width: 20%;
+  font-size: 1em;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  /* line 14, ../scss/responsiveStyles.scss */
+  main #welcomeHeader {
+    height: 120px;
+  }
+}

@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+$("header a img").hide().fadeIn(2000);
+
+
+
+// SLIDESHOW
 $(".fadein img:gt(0)").hide();
 
 setInterval(function(){

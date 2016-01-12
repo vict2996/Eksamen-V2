@@ -64,9 +64,6 @@ body{
 				&:hover{
 					border-bottom:5px solid #808080;
 				}
-				&:nth-child(1){
-					border-bottom:5px solid #c5c5c5;
-				}
 				a{
 					color:white;
 					text-decoration:none;
@@ -145,7 +142,7 @@ main{
 	#rightArticle{
 		border-right:1px solid lightgray;
 		border-left:1px solid lightgray;
-		min-width:49%;
+		min-width:600px;
 		flex:1;
 		h2{
 			font-family:$headerFont;
@@ -164,6 +161,8 @@ main{
 			text-align:center;
 			padding-top:15px;
 			font-size:20px;
+			padding-right:3px;
+			padding-left:3px;
 		}
 		.fadein{
 			margin:0 auto;
@@ -229,3 +228,5 @@ main{
 	}
 
 }
+
+// =====REFERENCER.HTML=====
