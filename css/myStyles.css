@@ -70,64 +70,230 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 16, ../scss/myStyles.scss */
+body {
+  background-color: #DEDEDE;
+}
+
+/* line 20, ../scss/myStyles.scss */
 #mainHeader {
-  width: 100%;
+  width: 70%;
   background-color: RGB(151, 33, 38);
   display: flex;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 0px 10px 5px #888888;
 }
-/* line 22, ../scss/myStyles.scss */
+/* line 29, ../scss/myStyles.scss */
 #mainHeader a img {
   width: 300px;
   height: auto;
 }
-/* line 29, ../scss/myStyles.scss */
+/* line 36, ../scss/myStyles.scss */
 #mainHeader nav ul {
   display: flex;
+  text-align: center;
+  margin-left: 5%;
 }
-/* line 32, ../scss/myStyles.scss */
+/* line 40, ../scss/myStyles.scss */
+#mainHeader nav ul li {
+  flex: 1;
+  height: 35px;
+  margin-top: 50px;
+  padding-top: 5px;
+  font-size: 1.2em;
+  min-width: 30%;
+  background-color: #b4282e;
+  box-shadow: 5px 5px 5px #6f181c;
+  border-right: 1px solid #511215;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+/* line 52, ../scss/myStyles.scss */
+#mainHeader nav ul li:last-child {
+  border: 0;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+}
+/* line 57, ../scss/myStyles.scss */
+#mainHeader nav ul li:first-child {
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+}
+/* line 61, ../scss/myStyles.scss */
+#mainHeader nav ul li:active {
+  box-shadow: inset 2px 2px 5px #6f181c;
+}
+/* line 64, ../scss/myStyles.scss */
+#mainHeader nav ul li:hover {
+  border-bottom: 5px solid #808080;
+}
+/* line 67, ../scss/myStyles.scss */
+#mainHeader nav ul li:nth-child(1) {
+  border-bottom: 5px solid #c5c5c5;
+}
+/* line 70, ../scss/myStyles.scss */
 #mainHeader nav ul li a {
   color: white;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+}
+/* line 73, ../scss/myStyles.scss */
+#mainHeader nav ul li a:hover {
+  color: #c5c5c5;
 }
 
-/* line 41, ../scss/myStyles.scss */
+/* line 82, ../scss/myStyles.scss */
 main {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 46, ../scss/myStyles.scss */
+/* line 87, ../scss/myStyles.scss */
 main #welcomeHeader {
-  background-color: lightgray;
-  height: 100px;
+  background: radial-gradient(#d3d3d3, #ffffff);
+  height: 75px;
   min-width: 100%;
+  padding-top: 25px;
 }
-/* line 50, ../scss/myStyles.scss */
+/* line 92, ../scss/myStyles.scss */
 main #welcomeHeader h1 {
+  font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5em;
 }
-/* line 55, ../scss/myStyles.scss */
+/* line 97, ../scss/myStyles.scss */
+main #welcomeHeader hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+/* line 104, ../scss/myStyles.scss */
 main #leftArticle {
-  background-color: green;
-  min-width: 50%;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  min-width: 49%;
   flex: 1;
 }
-/* line 60, ../scss/myStyles.scss */
+/* line 109, ../scss/myStyles.scss */
+main #leftArticle h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2%;
+}
+/* line 115, ../scss/myStyles.scss */
+main #leftArticle hr {
+  height: 12px;
+  border-radius: 30px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+/* line 121, ../scss/myStyles.scss */
+main #leftArticle p {
+  font-family: "Merriweather", serif;
+  padding-left: 13%;
+  padding-right: 10%;
+  font-size: 20px;
+  line-height: 23px;
+}
+/* line 128, ../scss/myStyles.scss */
+main #leftArticle h3 {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 5%;
+  padding-left: 22%;
+  padding-right: 10%;
+  font-size: 25px;
+}
+/* line 135, ../scss/myStyles.scss */
+main #leftArticle ul {
+  margin-top: 2%;
+  margin-left: 30%;
+}
+/* line 138, ../scss/myStyles.scss */
+main #leftArticle ul li {
+  font-size: 25px;
+  font-family: "Merriweather", serif;
+  list-style-type: circle;
+}
+/* line 145, ../scss/myStyles.scss */
 main #rightArticle {
-  background-color: purple;
-  min-width: 50%;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  min-width: 49%;
   flex: 1;
 }
-/* line 64, ../scss/myStyles.scss */
+/* line 150, ../scss/myStyles.scss */
+main #rightArticle h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2%;
+}
+/* line 156, ../scss/myStyles.scss */
+main #rightArticle hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+/* line 162, ../scss/myStyles.scss */
+main #rightArticle p {
+  font-family: "Merriweather", serif;
+}
+/* line 165, ../scss/myStyles.scss */
 main #rightArticle .fadein {
+  margin-left: 15%;
+  margin-bottom: 5%;
+  margin-top: 5%;
   position: relative;
   width: 430px;
   height: 300px;
 }
-/* line 69, ../scss/myStyles.scss */
+/* line 173, ../scss/myStyles.scss */
 main #rightArticle .fadein img {
   position: absolute;
   left: 0;
   top: 0;
+}
+/* line 181, ../scss/myStyles.scss */
+main #capabilities {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+}
+/* line 186, ../scss/myStyles.scss */
+main #capabilities header {
+  min-width: 100%;
+  height: 50px;
+  background-color: lightgray;
+}
+/* line 190, ../scss/myStyles.scss */
+main #capabilities header h1 {
+  text-align: center;
+  font-size: 30px;
+}
+/* line 197, ../scss/myStyles.scss */
+main #capabilities div {
+  min-width: 20%;
+  height: 70px;
+  margin: 2% 2% 2% 2%;
+  background-color: green;
+}
+
+/* line 206, ../scss/myStyles.scss */
+#mainFooter {
+  height: 150px;
+  width: 70%;
+  background-color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 212, ../scss/myStyles.scss */
+#mainFooter .imgContainer {
+  flex: 1;
+  min-width: 25%;
+}
+/* line 215, ../scss/myStyles.scss */
+#mainFooter .imgContainer img {
+  height: auto;
+  width: 150px;
 }
