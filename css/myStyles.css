@@ -163,7 +163,7 @@ main #welcomeHeader h1 {
 main #welcomeHeader hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 /* line 104, ../scss/myStyles.scss */
 main #leftArticle {
@@ -184,7 +184,7 @@ main #leftArticle hr {
   height: 12px;
   border-radius: 30px;
   border: 0;
-  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0);
 }
 /* line 121, ../scss/myStyles.scss */
 main #leftArticle p {
@@ -231,55 +231,66 @@ main #rightArticle h2 {
 main #rightArticle hr {
   height: 12px;
   border: 0;
-  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0);
   border-radius: 30px;
 }
 /* line 162, ../scss/myStyles.scss */
 main #rightArticle p {
   font-family: "Merriweather", serif;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
 }
-/* line 165, ../scss/myStyles.scss */
+/* line 168, ../scss/myStyles.scss */
 main #rightArticle .fadein {
-  margin-left: 15%;
+  margin: 0 auto;
   margin-bottom: 5%;
   margin-top: 5%;
   position: relative;
   width: 430px;
   height: 300px;
 }
-/* line 173, ../scss/myStyles.scss */
+/* line 176, ../scss/myStyles.scss */
 main #rightArticle .fadein img {
   position: absolute;
-  left: 0;
-  top: 0;
 }
-/* line 181, ../scss/myStyles.scss */
+/* line 182, ../scss/myStyles.scss */
 main #capabilities {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: blue;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 }
-/* line 186, ../scss/myStyles.scss */
+/* line 188, ../scss/myStyles.scss */
 main #capabilities header {
   min-width: 100%;
   height: 50px;
   background-color: lightgray;
 }
-/* line 190, ../scss/myStyles.scss */
-main #capabilities header h1 {
+/* line 192, ../scss/myStyles.scss */
+main #capabilities header h2 {
+  font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 30px;
+  font-size: 2em;
+  margin-top: 5px;
 }
-/* line 197, ../scss/myStyles.scss */
+/* line 199, ../scss/myStyles.scss */
+main #capabilities header hr {
+  height: 12px;
+  border-radius: 30px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0);
+}
+/* line 207, ../scss/myStyles.scss */
 main #capabilities div {
   min-width: 20%;
   height: 70px;
   margin: 2% 2% 2% 2%;
-  background-color: green;
+  border: 1px solid green;
 }
 
-/* line 206, ../scss/myStyles.scss */
+/* line 216, ../scss/myStyles.scss */
 #mainFooter {
   height: 150px;
   width: 70%;
@@ -287,12 +298,12 @@ main #capabilities div {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 212, ../scss/myStyles.scss */
+/* line 222, ../scss/myStyles.scss */
 #mainFooter .imgContainer {
   flex: 1;
   min-width: 25%;
 }
-/* line 215, ../scss/myStyles.scss */
+/* line 225, ../scss/myStyles.scss */
 #mainFooter .imgContainer img {
   height: auto;
   width: 150px;
