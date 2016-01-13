@@ -17,10 +17,12 @@
 	<header id="mainHeader" class="contentContainer">
 			<!-- logo -->
 			<a href="index.html"><img src="images/logo.png" title="Forsiden" alt="FTM byg logo"></a>
+			<!-- menu button for mobile -->
+			<div id="menuButton"></div>
 			<!-- navigation -->
 			<nav id="mainNav">
 				<ul>
-					<li style="border-bottom:5px solid #c5c5c5"><a href="index.html">Forside</a></li>
+					<li class="active"><a href="index.html">Forside</a></li>
 					<li><a href="referencer.html">Referencer</a></li>
 					<li><a href="omtale.html">Omtale</a></li>
 					<li><a href="firmaprofil.html">Firmaprofil</a></li>
@@ -43,13 +45,20 @@
 			<p>
 				hvad enten det drejer sig om små reparationer, nybyggeri, større byggeprojekter i såvel delentreprise som totalentreprise.
 			</p>
-			<h3>Vore varemærke er:</h3>
-			<ul>
-				<li>27 års erfaring</li>
-				<li>pålidelighed</li>
-				<li>kvalitet</li>
-				<li>god rådgivning</li>
-			</ul>
+			<div id="leftArticleFlexbox">
+				<div>
+					<h3>Vore varemærke er:</h3>
+					<ul>
+						<li>27 års erfaring</li>
+						<li>pålidelighed</li>
+						<li>kvalitet</li>
+						<li>god rådgivning</li>
+					</ul>
+				</div>
+				<div>
+					<img src="images/erik.jpg" alt="Erik. Owner">
+				</div>
+			</div>
 		</article>
 		<!-- article for right content -->
 		<article id="rightArticle">
@@ -57,7 +66,7 @@
 			<hr>
 			<p>Eksempler på projekter, vi har været involveret i. <a href="referencer.html">Se mere her</a></p>
 			<!-- slideshow -->
-			<div class="fadein contentContainer">
+			<div class="fadein">
 				<img src="images\slideshow\slide1.jpg" alt="slide 1">
 				<img src="images\slideshow\slide2.jpg" alt="slide 2">
 				<img src="images\slideshow\slide3.jpg" alt="slide 3">

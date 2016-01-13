@@ -11,6 +11,10 @@ $paragraphFont:'Merriweather', serif;
 	padding-left:15%;
 	padding-right:15%;
 }
+.active{
+	border-bottom:5px solid #c5c5c5!important;
+}
+
 // =====INDEX.HTML=====
 
 body{
@@ -30,6 +34,17 @@ body{
 			width:300px;
 			height:auto;
 		}
+	}
+	#menuButton{
+		background-image:url("../images/menuButton.png");
+		background-size:contain;
+		background-repeat:no-repeat;
+		width:30px;
+		height:30px;
+		min-width:90%;
+		margin-left:5%;
+		display:none;
+
 	}
 	nav{
 
@@ -83,9 +98,10 @@ main{
 	// welcoming Header
 	#welcomeHeader{
 		background: radial-gradient(lightgray, white);
-		height:75px;
+		// background-image:url("../images/wall.png");
+		height:100px;
 		min-width:100%;
-		padding-top:25px;
+		padding-top:50px;
 		h1{
 			font-family:$headerFont;
 			text-align:center;
@@ -107,6 +123,7 @@ main{
 			font-family:$headerFont;
 			font-size:2em;
 			text-align:center;
+			margin-top:2%;
 			margin-bottom:2%;
 		}
 		hr{
@@ -115,25 +132,36 @@ main{
     		border: 0;
     		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 		}
+		#leftArticleFlexbox{
+			width:100%;
+			display:flex;
+			div{
+				flex:1;
+				margin-left:5%;
+				margin-top:5%;
+				img{
+					width:auto;
+					height:100%;
+				}
+			}
+		}
 		p{
+			width:75%;
+			margin:0 auto;
 			font-family:$paragraphFont;
-			padding-left:13%;
-			padding-right:10%;
+			padding-top:15px;
 			font-size:20px;
 			line-height:23px;
+			font-size:20px;
 		}
 		h3{
 			font-family:$headerFont;
-			padding-top:5%;
-			padding-left:22%;
-			padding-right:10%;
-			font-size:25px;
+			font-size:20px;
 		}
 		ul{
-			margin-top:2%;
-			margin-left:30%;
+
 			li{
-				font-size:25px;
+				font-size:20px;
 				font-family:$paragraphFont;
 				list-style-type: circle;
 			}
@@ -142,13 +170,14 @@ main{
 	#rightArticle{
 		border-right:1px solid lightgray;
 		border-left:1px solid lightgray;
-		min-width:600px;
+		min-width:49%;
 		flex:1;
 		h2{
 			font-family:$headerFont;
 			font-size:2em;
 			text-align:center;
 			margin-bottom:2%;
+			margin-top:2%;
 		}
 		hr{
 			height: 12px;
@@ -161,8 +190,9 @@ main{
 			text-align:center;
 			padding-top:15px;
 			font-size:20px;
-			padding-right:3px;
-			padding-left:3px;
+			margin:0 auto;
+			width:75%;
+			line-height:23px;
 		}
 		.fadein{
 			margin:0 auto;
@@ -174,6 +204,7 @@ main{
 
 			img{
 				position:absolute;
+				border-radius:5px;
 			}
 		}
 	}
