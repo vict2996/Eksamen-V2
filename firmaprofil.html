@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>FTM byg - Forside</title>
-	<meta name="description" content="Fjelstervang murer og tømrerfirma - Herning Aulum Vildbjerg Videbæk Vorgod Barde Spjald Snejbjerg" />
+	<meta name="description" content="Fjelstervang murer og tømrerfirma - Vi er altid klar med et godt tilbud. hvad enten det drejer sig om små reparationer, nybyggeri, større byggeprojekter i såvel delentreprise som totalentreprise." />
+	<meta name="viewport" content="width=device-width">
 	<!-- linking google font -->
 	<!-- Open Sans -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -12,11 +13,15 @@
 	<!-- Linking stylesheets -->
 	<link rel="stylesheet" href="css/myStyles.css">
 	<link rel="stylesheet" href="css/responsiveStyles.css" media="screen and (max-width:1700px)">
+	<!-- linking tab icon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
 </head>
 <body>
 	<header id="mainHeader" class="contentContainer">
 			<!-- logo -->
 			<a href="index.html"><img src="images/logo.png" title="Forsiden" alt="FTM byg logo"></a>
+			<!-- menu button for mobile -->
+			<div id="menuButton"></div>
 			<!-- navigation -->
 			<nav id="mainNav">
 				<ul>
@@ -43,13 +48,20 @@
 			<p>
 				hvad enten det drejer sig om små reparationer, nybyggeri, større byggeprojekter i såvel delentreprise som totalentreprise.
 			</p>
-			<h3>Vore varemærke er:</h3>
-			<ul>
-				<li>27 års erfaring</li>
-				<li>pålidelighed</li>
-				<li>kvalitet</li>
-				<li>god rådgivning</li>
-			</ul>
+			<div id="leftArticleFlexbox">
+				<div>
+					<h3>Vore varemærke er:</h3>
+					<ul>
+						<li>27 års erfaring</li>
+						<li>pålidelighed</li>
+						<li>kvalitet</li>
+						<li>god rådgivning</li>
+					</ul>
+				</div>
+				<div>
+					<img src="images/erik.jpg" alt="Erik. Owner">
+				</div>
+			</div>
 		</article>
 		<!-- article for right content -->
 		<article id="rightArticle">
@@ -57,7 +69,7 @@
 			<hr>
 			<p>Eksempler på projekter, vi har været involveret i. <a href="referencer.html">Se mere her</a></p>
 			<!-- slideshow -->
-			<div class="fadein contentContainer">
+			<div class="fadein">
 				<img src="images\slideshow\slide1.jpg" alt="slide 1">
 				<img src="images\slideshow\slide2.jpg" alt="slide 2">
 				<img src="images\slideshow\slide3.jpg" alt="slide 3">

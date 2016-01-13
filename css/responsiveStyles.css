@@ -20,33 +20,42 @@
   }
 }
 @media screen and (max-width: 1100px) {
-  /* line 31, ../scss/responsiveStyles.scss */
+  /* line 30, ../scss/responsiveStyles.scss */
+  .contentContainer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* line 36, ../scss/responsiveStyles.scss */
   main #welcomeHeader h1 {
     font-size: 2em;
   }
 
-  /* line 36, ../scss/responsiveStyles.scss */
+  /* line 41, ../scss/responsiveStyles.scss */
   #mainHeader {
+    width: 90%;
     flex-wrap: wrap;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
   }
-  /* line 38, ../scss/responsiveStyles.scss */
+  /* line 44, ../scss/responsiveStyles.scss */
   #mainHeader a {
     margin: auto;
   }
-  /* line 42, ../scss/responsiveStyles.scss */
+  /* line 50, ../scss/responsiveStyles.scss */
   #mainHeader #menuButton {
     display: initial;
   }
-  /* line 45, ../scss/responsiveStyles.scss */
+  /* line 53, ../scss/responsiveStyles.scss */
   #mainHeader nav {
     display: none;
     min-width: 95%;
   }
-  /* line 48, ../scss/responsiveStyles.scss */
+  /* line 56, ../scss/responsiveStyles.scss */
   #mainHeader nav ul {
     flex-direction: column;
   }
-  /* line 50, ../scss/responsiveStyles.scss */
+  /* line 58, ../scss/responsiveStyles.scss */
   #mainHeader nav ul li {
     min-width: 10%;
     font-size: 1em;
@@ -54,17 +63,67 @@
     margin-top: 0px;
     border-bottom: 1px solid lightgray;
   }
-  /* line 57, ../scss/responsiveStyles.scss */
+  /* line 65, ../scss/responsiveStyles.scss */
   #mainHeader nav ul li:last-child {
     border: 0;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     border-top-right-radius: 0px;
   }
-  /* line 63, ../scss/responsiveStyles.scss */
+  /* line 71, ../scss/responsiveStyles.scss */
   #mainHeader nav ul li:first-child {
     border-bottom-left-radius: 0px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+  }
+
+  /* line 80, ../scss/responsiveStyles.scss */
+  #mainFooter {
+    width: 90%;
+  }
+  /* line 82, ../scss/responsiveStyles.scss */
+  #mainFooter .imgContainer {
+    min-width: 25%;
+  }
+  /* line 84, ../scss/responsiveStyles.scss */
+  #mainFooter .imgContainer img {
+    height: auto;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 93, ../scss/responsiveStyles.scss */
+  #mainHeader {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  /* line 100, ../scss/responsiveStyles.scss */
+  main #welcomeHeader {
+    height: 70px;
+    padding-top: 15px;
+  }
+  /* line 103, ../scss/responsiveStyles.scss */
+  main #welcomeHeader h1 {
+    font-size: 1.5em;
+  }
+  /* line 108, ../scss/responsiveStyles.scss */
+  main #leftArticle h2, main #rightArticle h2 {
+    font-size: 1.3em;
+  }
+  /* line 113, ../scss/responsiveStyles.scss */
+  main #capabilities div {
+    min-width: 45%;
+  }
+
+  /* line 119, ../scss/responsiveStyles.scss */
+  #mainFooter .imgContainer {
+    min-width: 50%;
+    margin-bottom: 5px;
+  }
+  /* line 122, ../scss/responsiveStyles.scss */
+  #mainFooter .imgContainer img {
+    height: auto;
+    width: 100px;
   }
 }
